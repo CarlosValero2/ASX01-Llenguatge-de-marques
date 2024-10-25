@@ -1,0 +1,10 @@
+.linia {
+    margin-top: 3%;
+    border: 1px solid black;
+    width: 100%;
+}
+.fotos img {
+    height: auto;
+    width: 100px
+
+}
