@@ -1,0 +1,49 @@
+.linia {
+    margin-top: 3%;
+    border: 1px solid black;
+    width: 100%;
+}
+.fotos img {
+    height: auto;
+    width: 100px;
+}
+
+.fotos {
+    margin-left: 73%;
+    margin-top: -2.2%;
+}
+
+.logonav a img{
+    text-align: left;
+    height: auto;
+    width: 100px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+nav {
+    text-align: center;
+    margin-top: -4%;
+}
+footer{
+    text-align: center;
+    margin-top: 3%;
+}
+   
+.fotofooter img {
+    height: auto;
+    width: 100px;
+    margin-right: 90%;
+    margin-top: 1%;
+}
+
+.textfooter {
+    margin-top: -4%;
+    text-decoration: none;
+    color: blue;
+}
+
+.dretsfooter {
+    margin-right: -75%;
+    margin-top: -1%;
+    
+}
