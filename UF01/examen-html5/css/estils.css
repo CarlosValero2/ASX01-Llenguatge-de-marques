@@ -1,0 +1,21 @@
+img {
+    height: auto;
+    width: 100px;
+}
+.logonav a img{
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+header {
+    background-color:darkblue; 
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav { 
+    margin-left: 70%;
+}
