@@ -1,0 +1,90 @@
+$with-desktop: 1440px;
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header {
+  background-image: url("../img/bg-hero-desktop.svg");
+  display: grid;
+  grid-template-areas:
+    "logo try"
+    "text image";
+  grid-template-columns: 1fr 1fr; // para q las columnas valgan lo mismo, que ocupen lo mismo vaya.
+  gap: 2rem; // espacio entre las columnas.
+  align-items: center;
+  padding: 2rem;
+  width: $with-desktop;
+  margin: 0 auto;
+// Para poner el logo lo primero.
+  a:first-of-type {
+    grid-area: logo;
+    img {
+      max-width: 140px;
+    }
+  }
+  // Para poner el botón lo ultimo.
+  div:nth-of-type(1) {
+    grid-area: try;
+    justify-self: end;
+    a {
+      display: inline-block;
+      background-color: #FFFFFF;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+  // Poner text en su sitio
+  div:nth-of-type(2) {
+    grid-area: text;
+    text-align: left;
+    max-width: 600px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+      @media (min-width: 768px) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    // boton rosa
+    a {
+      display: inline-block;
+      background-color: #ff54c4;
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #ff54c4;
+      }
+    }
+  }
+  // foto grande
+  img:last-of-type {
+    grid-area: image;
+    max-width: 100%;
+    align-self: center; 
+    justify-self: center;
+    width: 400px;
+    @media (min-width: 768px) { // Para que en las pantallas que tengan menos de 768 px tengan el width de 400 y sino de 600.-
+      width: 600px; 
+    }
+  }
+}
+
